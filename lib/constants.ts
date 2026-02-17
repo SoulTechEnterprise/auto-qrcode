@@ -7,7 +7,7 @@ export const SITE_CONFIG = {
 export const HOW_IT_WORKS_STEPS = [
   {
     number: 1,
-    title: "Crie a Impress",
+    title: "Gere e Imprima",
     description: "Cole seu código QR na plataforma e imprima ou peça impressa de alta durabilidade.",
   },
   {

@@ -1,13 +1,13 @@
 import Link from "next/link"
 import Image from "next/image"
 import { SITE_CONFIG, CONTACT_LINKS } from "@/lib/constants"
+import { Instagram, MessageCircle, FileText } from "lucide-react"
 
 export function Footer() {
   return (
     <footer className="border-t bg-background">
-      <div className="container px-4 py-8 md:px-8 md:py-12">
+      <div className="container mx-auto max-w-6xl px-6 py-8 md:px-8 md:py-12">
         <div className="grid gap-8 md:grid-cols-3">
-          {/* Logo e Nome */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Image 
@@ -24,30 +24,30 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Links */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold">Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   href={CONTACT_LINKS.termsOfUse}
-                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
                 >
+                  <FileText className="h-4 w-4" />
                   Termos de Uso
                 </Link>
               </li>
               <li>
                 <Link
                   href={CONTACT_LINKS.privacyPolicy}
-                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
                 >
+                  <FileText className="h-4 w-4" />
                   Política de Privacidade
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contato */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold">Contato</h3>
             <ul className="space-y-2 text-sm">
@@ -56,8 +56,9 @@ export function Footer() {
                   href={CONTACT_LINKS.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
                 >
+                  <Instagram className="h-4 w-4" />
                   Instagram
                 </a>
               </li>
@@ -66,8 +67,9 @@ export function Footer() {
                   href={CONTACT_LINKS.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
                 >
+                  <MessageCircle className="h-4 w-4" />
                   WhatsApp
                 </a>
               </li>
