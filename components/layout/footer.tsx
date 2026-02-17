@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { SITE_CONFIG, CONTACT_LINKS } from "@/lib/constants"
 
 export function Footer() {
@@ -9,7 +10,13 @@ export function Footer() {
           {/* Logo e Nome */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="h-8 w-8 rounded-md bg-primary" />
+              <Image 
+                src="/logo.webp" 
+                alt="Logo Auto QRCode" 
+                width={48} 
+                height={48}
+                className="rounded-md"
+              />
               <span className="text-lg font-bold">{SITE_CONFIG.name}</span>
             </div>
             <p className="text-sm text-muted-foreground">

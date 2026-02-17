@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { SITE_CONFIG } from "@/lib/constants"
 
@@ -8,7 +9,13 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between px-4 md:px-8">
         <Link href="/" className="flex items-center space-x-2">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-md bg-primary" />
+            <Image 
+              src="/logo.webp" 
+              alt="Logo Auto QRCode" 
+              width={48} 
+              height={48}
+              className="rounded-md"
+            />
             <span className="text-lg font-bold md:text-xl">
               {SITE_CONFIG.name}
             </span>

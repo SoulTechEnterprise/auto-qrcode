@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Auto QRCode",
   description: "Crie QR Codes dinâmicos para imóveis",
+  icons:{
+    icon: "/logo.webp",
+  }
 };
 
 export default function RootLayout({
