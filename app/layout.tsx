@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <GoogleTagManager dataLayerName="google-tag-manager" gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID!} gtmScriptUrl={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_URL!} />
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID!} gtmScriptUrl={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_URL!} />
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-background antialiased`}
