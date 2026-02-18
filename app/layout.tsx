@@ -5,6 +5,9 @@ import { Footer } from "@/components/layout/footer";
 import { SITE_CONFIG } from "@/lib/constants";
 import "./globals.css";
 
+import Script from 'next/script'
+import { GoogleTagManager } from '@next/third-parties/google'
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -35,6 +38,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        {/* 1. Carrega a configuração do Klaro primeiro */}
+        <Script
+          src={`${process.env.NEXT_PUBLIC_KLARO}/config.js`}
+          strategy="beforeInteractive"
+        />
+
+        {/* 2. Carrega o motor do Klaro logo em seguida */}
+        <Script
+        src={`${process.env.NEXT_PUBLIC_KLARO}/klaro.js`}
+          strategy="afterInteractive"
+        />
+
+        <GoogleTagManager data-name="google-tag-manager" gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID} gtmScriptUrl={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_URL} />
+      </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-background antialiased`}
       >
