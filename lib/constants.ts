@@ -47,7 +47,7 @@ export const BENEFITS = [
 
 export const PRICING = {
   monthly: {
-    price: 19.90,
+    price: 29.90,
     currency: "R$",
     period: "mês",
     features: [
@@ -55,7 +55,7 @@ export const PRICING = {
     ],
   },
   annual: {
-    price: 16.90,
+    price: 19.90,
     currency: "R$",
     period: "mês",
     yearlyTotal: 202.80,

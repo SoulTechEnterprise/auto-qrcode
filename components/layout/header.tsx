@@ -17,7 +17,7 @@ export function Header() {
         </Link>
 
         <Button size="sm" className="bg-yellow-300 text-black shadow-md transition-all hover:bg-yellow-400 hover:scale-105 hover:shadow-lg md:size-default">
-          Acesse Agora
+          Assinar Agora
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
       </div>
