@@ -38,21 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <head>
-        {/* 1. Carrega a configuração do Klaro primeiro */}
-        <Script
-          src={`${process.env.NEXT_PUBLIC_KLARO}/config.js`}
-          strategy="beforeInteractive"
-        />
-
-        {/* 2. Carrega o motor do Klaro logo em seguida */}
-        <Script
-        src={`${process.env.NEXT_PUBLIC_KLARO}/klaro.js`}
-          strategy="afterInteractive"
-        />
-
-        <GoogleTagManager data-name="google-tag-manager" gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID} gtmScriptUrl={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_URL} />
-      </head>
+      <GoogleTagManager dataLayerName="google-tag-manager" gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID!} gtmScriptUrl={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_URL!} />
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-background antialiased`}
