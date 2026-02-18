@@ -58,7 +58,7 @@ export const PRICING = {
     price: 19.90,
     currency: "R$",
     period: "mês",
-    yearlyTotal: 202.80,
+    yearlyTotal: 238.80,
     features: [
       "Suporte humanizado",
       "2 meses grátis no ano",
