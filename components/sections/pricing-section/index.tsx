@@ -15,7 +15,7 @@ const PRICING = {
     features: [
       "Suporte humanizado",
     ],
-    link: "https://pay.cakto.com.br/d4uhdit_770158"
+    link: process.env.NEXT_PUBLIC_CAKTO_MONTHLY!
   },
   annual: {
     price: 19.90,
@@ -26,7 +26,7 @@ const PRICING = {
       "Suporte humanizado",
       "2 meses grátis no ano",
     ],
-    link: "https://pay.cakto.com.br/3835bg9"
+    link: process.env.NEXT_PUBLIC_CAKTO_ANNUAL!
   },
 } as const
 

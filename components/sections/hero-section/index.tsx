@@ -23,7 +23,7 @@ export function HeroSection() {
           </p>
 
           <Button asChild size="lg" className="mb-4 bg-yellow-300 text-black shadow-lg shadow-yellow-300/20 transition-all hover:bg-yellow-400 hover:shadow-xl hover:shadow-yellow-400/30 hover:scale-105">
-            <Link href="https://pay.cakto.com.br/3835bg9">
+            <Link href={process.env.NEXT_PUBLIC_CAKTO_ANNUAL!}>
               <QrCode className="mr-2 h-5 w-5" />
               Criar meu primeiro QRCode
             </Link>

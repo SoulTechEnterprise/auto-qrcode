@@ -17,7 +17,7 @@ export function Header() {
         </Link>
 
         <Button asChild size="sm" className="bg-yellow-300 text-black shadow-md transition-all hover:bg-yellow-400 hover:scale-105 hover:shadow-lg md:size-default">
-          <Link href="https://pay.cakto.com.br/3835bg9">
+          <Link href={process.env.NEXT_PUBLIC_CAKTO_ANNUAL!}>
             Assinar Agora
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>

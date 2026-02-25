@@ -71,7 +71,7 @@ export function HowItWorksSection() {
 
         <div className="text-center">
           <Button asChild size="lg" className="h-12 px-8 text-base font-semibold shadow-lg transition-all hover:scale-105 hover:shadow-xl">
-            <Link href="https://pay.cakto.com.br/3835bg9">
+            <Link href={process.env.NEXT_PUBLIC_CAKTO_ANNUAL!}>
               Quero economizar com impressões
               <PiggyBank className="ml-2 h-5 w-5" />
             </Link>
