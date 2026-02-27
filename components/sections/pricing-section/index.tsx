@@ -24,7 +24,7 @@ const PRICING = {
     yearlyTotal: 238.80,
     features: [
       "Suporte humanizado",
-      "2 meses grátis no ano",
+      "4 meses grátis no ano",
     ],
     link: process.env.NEXT_PUBLIC_CAKTO_ANNUAL!
   },
@@ -82,7 +82,7 @@ export function PricingSection() {
 
             {billingPeriod === "annual" && (
               <Badge className="absolute left-4 top-4 animate-in slide-in-from-left-5 bg-green-500 px-4 py-1.5 text-xs font-bold uppercase text-white hover:bg-green-500">
-                Economize 15%
+                Economize 33%
               </Badge>
             )}
 
@@ -133,7 +133,7 @@ export function PricingSection() {
               style={{ animationDelay: '500ms' }}
               asChild
             >
-              <Link href={plan.link}>Ir para o Checkout</Link>
+              <Link href={plan.link}>Assinar Agora</Link>
             </Button>
           </Card>
         </div>
